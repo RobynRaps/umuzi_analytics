@@ -155,3 +155,4 @@
 *__init__.pyc
 *__pycache__/
 *__init__.py
+.venv
