@@ -1,0 +1,9 @@
+# Core Web Framework
+fastapi==0.109.0
+uvicorn==0.22.0
+pydantic==1.10.7
+
+
+# Database
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
