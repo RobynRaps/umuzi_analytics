@@ -1,6 +1,8 @@
 from sqlalchemy import JSON, Column, Float, Integer, String, Text
 
+
 from .db import Base
+
 
 # create data models for meta, linkedin and google' apis
 
@@ -24,3 +26,14 @@ class AnalysisResult(Base):
 
     # Meta
     status = Column(String, default="PENDING")
+
+# meta insights database table
+
+
+class MetaInsight(Base):
+    __tablename__ = "meta_insights"
+
+    id = Column(Integer, primary_key=True, index=True)
+    page_id = Column(String)
+    metric_name = Column(String)
+    values = Column(JSON)
